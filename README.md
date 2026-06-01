@@ -2,7 +2,7 @@
 
 An AI-powered healthcare chatbot built with **Python**, **Transformers (T5)**, and **Gradio** to provide fast, natural-language health-related responses through a clean chat interface.
 
-## 🚀 Live Demo
+## Live Demo
 
 Try it here: **https://huggingface.co/spaces/Moham3d-3saam/healthcare-chatbot**
 

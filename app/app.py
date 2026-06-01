@@ -3,7 +3,6 @@ import re
 import torch
 import time
 from transformers import T5Tokenizer, T5ForConditionalGeneration
-import os
 
 # =========================
 # Model
@@ -60,10 +59,10 @@ def chat(message, history):
         yield streamed.strip()
 
 # =========================
-# Reset chat (IMPORTANT FIX)
+# Reset chat (FIXED)
 # =========================
 def reset_chat():
-    return gr.update(value=[])
+    return None
 
 # =========================
 # UI
@@ -87,15 +86,6 @@ with gr.Blocks(theme=theme, css=css) as demo:
     chatbot = gr.ChatInterface(
         fn=chat,
         examples=None
-    )
-
-    # ================= CLEAR BUTTON (BELOW CHAT) =================
-    with gr.Row():
-        clear_btn = gr.Button("🗑️ Clear Chat", variant="secondary")
-
-    clear_btn.click(
-        fn=reset_chat,
-        outputs=chatbot.chatbot
     )
 
 demo.queue().launch()

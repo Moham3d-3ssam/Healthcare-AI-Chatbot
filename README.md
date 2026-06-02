@@ -27,7 +27,7 @@ Healthcare-AI-Chatbot/
 ├── app/
 │   └── app.py
 ├── data/
-│   └── dataset.csv
+│   └── domain_specific_chatbot_data.csv
 ├── notebooks/
 │   └── training.ipynb
 ├── models/

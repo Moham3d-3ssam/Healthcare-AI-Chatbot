@@ -60,12 +60,6 @@ def chat(message, history):
         yield streamed.strip()
 
 # =========================
-# Reset chat (FIXED)
-# =========================
-def reset_chat():
-    return None
-
-# =========================
 # UI
 # =========================
 css = """

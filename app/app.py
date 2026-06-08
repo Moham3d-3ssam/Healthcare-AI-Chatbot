@@ -29,7 +29,7 @@ def clean_text(text):
 # =========================
 # Chat function (Streaming)
 # =========================
-def chat(message):
+def chat(message, history):
 
     message = clean_text(message)
 

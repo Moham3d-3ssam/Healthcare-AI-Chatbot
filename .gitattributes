@@ -1,1 +1,1 @@
-*.safetensors filter=lfs diff=lfs merge=lfs -tex
+*.safetensors filter=lfs diff=lfs merge=lfs -text

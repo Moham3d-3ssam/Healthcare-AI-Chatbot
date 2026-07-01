@@ -1,4 +1,4 @@
 gradio
 transformers
 torch
-sentencepiecee
+sentencepiece
